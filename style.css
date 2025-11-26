@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #111;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column; /* экран сверху, кнопки снизу */
+    gap: 10px;
+}
+
+/* Экран */
+.display {
+    width: 225px;
+    height: 60px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+/* Ряды кнопок */
+.line_buttons1,
+.line_buttons2,
+.line_buttons3,
+.line_buttons4,
+.line_buttons5 {
+    display: flex;
+    gap: 2px;
+}
+
+/* Кнопки */
+.all_button button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.gray_button button {
+    background: gray;
+}
+.blgr_button button {
+    background: rgb(48, 48, 48);
+}
+.yellow_but button {
+    background: orange;
+}
